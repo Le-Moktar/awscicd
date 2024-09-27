@@ -7,9 +7,9 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Le-Moktar/awscicd.git'
             }
         }
-        stage('Build'){
+        stage('test'){
   steps {
-       echo 'hello from the build stage'
+       sh 'echo test'
   }
 }
     }
