@@ -5,9 +5,9 @@ pipeline {
              step{
               git branch: 'main', url: 'https://github.com/Le-Moktar/awscicd.git   
             }
-            stage ('test')
+            stage ('cho')
             step{
-                sh 'echo test'
+                sh 'echo cho'
             }
         }
     }
