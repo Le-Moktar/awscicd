@@ -1,18 +1,16 @@
 pipeline {
-    agent any {
-        stages{
-            stage ('git checkout')
-             step{
-              git branch: 'main', url: 'https://github.com/Le-Moktar/awscicd.git   
-            }
-            stage ('test')
-            step{
-                sh 'echo test'
-            }
-             stage ('build')
-            step{
-                sh 'echo build'
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
             }
         }
+        stage('Build'){
+  steps {
+       echo 'hello from the build stage'
+  }
+}
     }
 }
